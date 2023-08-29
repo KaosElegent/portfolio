@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/*
+rem vs em:
+
+The rem unit is only relative to the document's root element, 
+while the em unit is only relative to the immediate parent of 
+the targeted element.
+
+This means that em sizes are inherited from parent elements, 
+while rem sizes are inherited only from the root element.
+*/
+
+
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;   
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+
+/* Nav bar CSS */
+
+nav {
+    position: sticky; /* Makes nav bar stick (to the top in our case) */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Makes nav bar appear above other elements */
+    display: flex; /* We use a flexbox */
+    align-items: center; /*Alignment along cross-axis (y-axis) */
+    justify-content: space-between; /*Alignment along main-axis (x-axis) */
+    padding: 1.5rem 3.5rem;
+    /*Padding takes one of the following:display:
+    top right bottom left          -> 4 values
+    top (right & left) bottom      -> 3 values
+    (top & bottom) (right & left)  -> 2 values
+    (all four)                     -> 1 value
+    */
+
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /* 
+    horizontal offset (+ve puts it on the right of the box, -ve puts it on the left)
+    +
+    vertical offset (+ve puts it below the box, -ve puts it above)
+    +
+    blur (Higher the blur radius, the more blurred the shadow will be)
+    +
+    (RGB values, alpha channel)
+    */
+}
+
+nav h1 {
+    color: var(--primary-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition); /*How fast it transitions to and from the hover state*/
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/*This is done to align the nav items from left to right, instead of top to bottom*/
+nav ul {
+    display: flex;
+    gap: 1.9rem; /*Distance betweeen rows/columns*/
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+/*Styling & hiding the hamburger menu button*/
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/*DEVELOPER INFO CSS*/
+.about-developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+    margin-top: 4.5rem;
+}
+
+.about-developer img {
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow) /* h-offset + v-offset + blur + spread(size of the shadow) + color */
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem;
+}
