@@ -11,75 +11,74 @@ This means that em sizes are inherited from parent elements,
 while rem sizes are inherited only from the root element.
 */
 
-
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serf;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;   
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --padding-paragraph: 0.3rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* CSS Resets */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 body {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
-
 
 /* Nav bar CSS */
 
 nav {
-    position: sticky; /* Makes nav bar stick (to the top in our case) */
-    top: 0;
-    left: 0;
-    z-index: 1; /* Makes nav bar appear above other elements */
-    display: flex; /* We use a flexbox */
-    align-items: center; /*Alignment along cross-axis (y-axis) */
-    justify-content: space-between; /*Alignment along main-axis (x-axis) */
-    padding: 1.5rem 3.5rem;
-    /*Padding takes one of the following:display:
+  position: sticky; /* Makes nav bar stick (to the top in our case) */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Makes nav bar appear above other elements */
+  display: flex; /* We use a flexbox */
+  align-items: center; /*Alignment along cross-axis (y-axis) */
+  justify-content: space-between; /*Alignment along main-axis (x-axis) */
+  padding: 1.5rem 3.5rem;
+  /*Padding takes one of the following:display:
     top right bottom left          -> 4 values
     top (right & left) bottom      -> 3 values
     (top & bottom) (right & left)  -> 2 values
     (all four)                     -> 1 value
     */
 
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    /* 
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /* 
     horizontal offset (+ve puts it on the right of the box, -ve puts it on the left)
     +
     vertical offset (+ve puts it below the box, -ve puts it above)
@@ -91,67 +90,112 @@ nav {
 }
 
 nav h1 {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 nav a {
-    color: var(--primary-color);
-    transition: var(--transition); /*How fast it transitions to and from the hover state*/
+  color: var(--primary-color);
+  transition: var(
+    --transition
+  ); /*How fast it transitions to and from the hover state*/
 }
 
 nav a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 /*This is done to align the nav items from left to right, instead of top to bottom*/
 nav ul {
-    display: flex;
-    gap: 1.9rem; /*Distance betweeen rows/columns*/
+  display: flex;
+  gap: 1.9rem; /*Distance betweeen rows/columns*/
 }
 
 nav ul li {
-    font-weight: var(--bold-font);
+  font-weight: var(--bold-font);
 }
 
 /*Styling & hiding the hamburger menu button*/
 .burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
 }
 
 /*DEVELOPER INFO CSS*/
 .about-developer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-    margin-top: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 4.5rem;
 }
 
 .about-developer img {
-    height: 37.5rem;
-    width: 37.5rem;
+  height: 37.5rem;
+  width: 37.5rem;
 }
 
 .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow) /* h-offset + v-offset + blur + spread(size of the shadow) + color */
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow); /* h-offset + v-offset + blur + spread(size of the shadow) + color */
 }
 
-.bio h1 {
-    margin-bottom: var(--bottom-margin);
+.bio-title {
+  margin-bottom: var(--bottom-margin);
 }
 
-.bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem;
+.bio-text {
+  line-height: var(--line-height);
+  padding: var(--padding-paragraph);
 }
+
+/* MORE ABOUT*/
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.more-about h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin);
+}
+
+.more-about p {
+  text-align: center;
+  line-height: var(--line-height);
+  padding: var(--padding-paragraph);
+}
+
+/* SKILLS */
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skills-title {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+  
