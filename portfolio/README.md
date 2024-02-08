@@ -14,9 +14,9 @@ Hey there! This repo contains the source code for my **Portfolio**. This project
 
 # Challanges
 
-For this project I decided to blog my entire development process, which you can find here:
+For this project I decided to blog my entire development process and the challanges I faces, which you can find here:
 
-< Coming Soon >
+- [Nullptr Blog Post](https://nullptr3.wordpress.com/)
 
 # Files
 
@@ -32,4 +32,4 @@ For this project I decided to blog my entire development process, which you can 
 # What is this?
 
 - Digital Portfolio, created from scratch. This repo contains the source code for my personal website (under development).
-- The entire development process will be logged in short blogs on < Coming Soon >
+- The entire development process will be logged in short blogs on: [Nullptr Blog Post](https://nullptr3.wordpress.com/)
