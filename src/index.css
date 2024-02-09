@@ -1,2 +1,29 @@
+:root {
+    --main-bg-color: #FAEED1;
+    --main-card-color: #DED0B6;
+    --main-alt-color: #B2A59B;
 
+    --main-text-color: #000000;
+
+}
+
+body h1{
+    background-color: #000000;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media all and (min-width: 40em) {
+    body{
+        background: #000000;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {...} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 80em) {...} */
 
