@@ -12,41 +12,27 @@
 
   </head>
   <body>
-    <nav class=" mb-10 navbar p-5">
-      <div class="flex-1 font-bold">
-          <a class="btn btn-ghost text-xl" href="/">Lego Collection</a>
-      </div>
-
-      <!--Regular Navbar-->
-      <div class="navbar-center">
-          <ul class="menu menu-horizontal hidden sm:flex">
-              <li>
-                  <a href="/about">About</a>
-              </li>
-              <li>
-                  <details>
-                      <summary>
-                          Theme
-                      </summary>
-                      <ul class="right-0">
-                          <li>
-                              <a href="/lego/sets?theme=Supplemental">Supplemental</a>
-                          </li>
-                          <li>
-                              <a href="/lego/sets?theme=Basic+Set">Basic Set</a>
-                          </li>
-                          <li>
-                              <a href="/lego/sets?theme=Jumbo+Bricks">Jumbo Bricks</a>
-                          </li>
-                      </ul>
-                  </details>
-              </li>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">Shrey Bhatt</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About</a></li>
+            <li>
+              <details>
+                <summary>
+                  Projects
+                </summary>
+                <ul class="p-2 bg-base-100 rounded-t-none">
+                  <li><a>Project 1</a></li>
+                  <li><a>Project 2</a></li>
+                </ul>
+              </details>
+            </li>
           </ul>
+        </div>
       </div>
-      </nav>
-    
-    
-    <!--script src="/public/src/index.js"></script-->
   
   </body>
 </html>
