@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-mc-1">
   <head>
 
     <meta charset="UTF-8" />
@@ -14,25 +14,25 @@
   <body>
 
     <!-- Navbar -->
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-mc-1 text-gray-300">
       
         <!-- Title Text-->
         <div class="flex-1">
-          <a class="btn btn-ghost text-xl">Shrey Bhatt</a>
+          <a class="btn btn-ghost hover:bg-mc-2 text-2xl">Dashboard</a>
         </div>
 
         <!-- Regular Navbar-->
         <div class="navbar-center hidden sm:flex">
-          <ul class="menu menu-horizontal">
-            <li><a>About</a></li>
-            <li>
+          <ul class="menu menu-horizontal text-xl">
+            <li class="hover:bg-mc-2 rounded"><a>About</a></li>
+            <li class="hover:bg-mc-2 rounded">
               <details>
                 <summary>
                   Projects
                 </summary>
-                <ul class="p-2 bg-base-100 rounded-t-none">
-                  <li><a>Project 1</a></li>
-                  <li><a>Project 2</a></li>
+                <ul class="p-2 bg-mc-2 rounded-t-none">
+                  <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
+                  <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
                 </ul>
               </details>
             </li>
@@ -40,28 +40,27 @@
         </div>
 
         <!-- Dropdown Navbar-->
-        <div class="dropdown">
+        <div class="dropdown pt-3">
             <label tabindex="0" class="btn btn-ghost sm:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>About</a></li>
-              <li>
+            <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-mc-2 rounded-box w-52">
+              <li class="hover:bg-mc-2 rounded"><a>About</a></li>
+              <li class="hover:bg-mc-2 rounded">
                 <details>
                   <summary>
                     Projects
                   </summary>
-                  <ul class="p-2 bg-base-100">
-                    <li><a>Project 1</a></li>
-                    <li><a>Project 2</a></li>
+                  <ul class="p-2 hover:bg-mc-2 rounded">
+                    <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
+                    <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
                   </ul>
                 </details>
               </li>
             </ul>
-</div>
+        </div>
 
-        
-      </div>
-  
+    </div>
+
   </body>
-</html>
+  </html>
