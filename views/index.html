@@ -9,8 +9,7 @@
     <title>Shrey Bhatt - UwU</title>
     
     <link rel="stylesheet" href="/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
-
+    
   </head>
   <body>
 
@@ -19,14 +18,15 @@
       
         <!-- Title Text-->
         <div class="flex-1">
-          <a class="btn btn-ghost hover:bg-mc-2 text-2xl">Dashboard</a>
+          <a href="/" class="btn btn-ghost hover:bg-mc-2 text-2xl">Dashboard</a>
         </div>
 
         <!-- Regular Navbar-->
         <div class="navbar-center hidden sm:flex">
           <ul class="menu menu-horizontal text-xl">
-            <li class="hover:bg-mc-2 rounded"><a>About</a></li>
-            <li class="hover:bg-mc-2 rounded">
+            <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
+            <li class="hover:bg-mc-2 rounded"><a href="/projects">Projects</a></li>
+            <!--li class="hover:bg-mc-2 rounded">
               <details>
                 <summary>
                   Projects
@@ -36,7 +36,7 @@
                   <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
                 </ul>
               </details>
-            </li>
+            </li-->
           </ul>
         </div>
 
@@ -46,8 +46,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-mc-2 rounded-box w-52">
-              <li class="hover:bg-mc-2 rounded"><a>About</a></li>
-              <li class="hover:bg-mc-2 rounded">
+              <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
+              <li class="hover:bg-mc-2 rounded"><a href="/projects">Projects</a></li>
+              <!--li class="hover:bg-mc-2 rounded">
                 <details>
                   <summary>
                     Projects
@@ -57,7 +58,7 @@
                     <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
                   </ul>
                 </details>
-              </li>
+              </li-->
             </ul>
         </div>
 
@@ -71,14 +72,14 @@
 
           <!-- Hero for smaller devices -->
           <h1 class="block lg:hidden text-5xl font-bold">Hey There! \n</h1>
-          <h1 class="block lg:hidden text-5xl font-bold">My Name is Shrey Bhatt</h1>
+          <h1 class="block lg:hidden text-5xl font-bold">My Name is <u class="text-primary">Shrey Bhatt</u></h1>
           
           <!-- Hero for large devices -->
-          <h1 class="hidden lg:block text-5xl font-bold">Hey There! \n My Name is Shrey Bhatt</h1>
+          <h1 class="hidden lg:block text-5xl font-bold">Hey There! \n My Name is <u class="text-primary">Shrey Bhatt</u></h1>
           
 
           <p class="text-3xl font-bold py-6">
-            <a class="typewrite" 
+            <a class="typewrite text-primary" 
                 data-period="2000" 
                 data-type='[ "A Software Developer", "An IBM Ambassador", 
                             "A STEM Instructor", "A Peer Mentor",
@@ -104,6 +105,7 @@
       </div>
     </div>
 
+    <!-- Timeline -->
     <ul class="max-w-5xl ml-auto mr-auto timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <li>
         <div class="timeline-middle">
