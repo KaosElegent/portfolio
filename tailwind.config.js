@@ -10,6 +10,9 @@ module.exports = {
         'mc-4': '#F4EEE0',
         'mc-1-d' : '#282535',
       },
+      screens: {
+        'bigger-phone': '580px',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
