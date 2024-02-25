@@ -22,9 +22,10 @@
       <!-- Regular Navbar-->
       <div class="navbar-center hidden sm:flex">
         <ul class="menu menu-horizontal text-xl">
+          <li class="hover:bg-mc-2 rounded"><a href="/">Home</a></li>
           <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
           <li class="hover:bg-mc-2 rounded">
-            <a href="/projects">Projects</a>
+            <a href="/projects">Projects & Repos</a>
           </li>
         </ul>
       </div>
@@ -60,23 +61,198 @@
     </div>
 
     <!-- Projects -->
-    <div>
-      <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="mt-16 ml-8 mr-8 flex flex-wrap justify-evenly">
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
         <figure>
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            src="/assets/proj1.png"
             alt="ProjectSS"
           />
         </figure>
         <div class="card-body">
           <h2 class="card-title">
-            Password Authentication/Storage System
-            <div class="badge badge-secondary">NEW</div>
+            Authentication/Credential Storage System
+            <!--div class="badge badge-secondary">NEW</div-->
           </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>
+            Generating cryptographically secure pseudorandom salts, 
+            hashing and storing credentials while preventing SQL 
+            injection attacks.
+          </p>
           <div class="card-actions justify-end">
-            <div class="badge badge-outline">Fashion</div>
-            <div class="badge badge-outline">Products</div>
+            <div class="badge badge-outline">Python</div>
+            <div class="badge badge-outline">MySQL</div>
+            <div class="badge badge-outline">Pandas</div>
+            <div class="badge badge-outline">Cryptography</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj2.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Eyecare Assistant
+          </h2>
+          <p>
+            An elementary assistant on Linux, which utilizes OpenCV 
+            and system alerts to notify the user that they have been at 
+            their computer for a long period of time.
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">C++</div>
+            <div class="badge badge-outline">OpenCV</div>
+            <div class="badge badge-outline">Bash</div>
+            <div class="badge badge-outline">Haar Cascades</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj3.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            VoiceRE (UI Incomplete)
+          </h2>
+          <p>
+            The application stores user-recorded audio onto Cloudinary, 
+            records it via MongoDB, and utilizes Google API and OpenAI, 
+            converting it into prompt-engineered questions for reimagined learning
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Next.js</div>
+            <div class="badge badge-outline">Flask</div>
+            <div class="badge badge-outline">OpenAI</div>
+            <div class="badge badge-outline">Cloudinary</div>
+            <div class="badge badge-outline">MongoDB</div>
+            <div class="badge badge-outline">Google API</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj4.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Neural Nets & Other Tensorflow Projects
+          </h2>
+          <p>
+            The google collab files host a plethora of personal as well as guided projects for understanding ml and nural networks.
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Tensorflow</div>
+            <div class="badge badge-outline">Keras</div>
+            <div class="badge badge-outline">Numpy</div>
+            <div class="badge badge-outline">Python</div>
+            <div class="badge badge-outline">Matplotlib</div>
+            <div class="badge badge-outline">Collab</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj5.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Personal Webpages (Passion Projects)
+          </h2>
+          <p>
+            The repo contains my constantly growing collection of minimalist webpages in different styles. 
+            This includes articles, demo music apps, etc.
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">HTML</div>
+            <div class="badge badge-outline">CSS</div>
+            <div class="badge badge-outline">Javascript</div>
+            <div class="badge badge-outline">Classless CSS</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj6.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            COBOL Data Querying
+          </h2>
+          <p>
+            COBOL is still widely used in legacy systems for it's reliability 
+            when it comes to financial calculations. This is why I decided to 
+            learn COBOL and provide a small showcase of reading 
+            fixed-length data files and performing arithmetric operations
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">COBOL</div>
+            <div class="badge badge-outline">Fixed-Length Data</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj8.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Portfolio Website
+          </h2>
+          <p>
+            This website serves as my personal portfolio, showcasing my skills,
+            work experience, leadership experience, projects, etc. 
+            It is always being imrpoved and reworked.
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">HTML</div>
+            <div class="badge badge-outline">CSS</div>
+            <div class="badge badge-outline">JavaScript</div>
+            <div class="badge badge-outline">Tailwind</div>
+            <div class="badge badge-outline">DaisyUI</div>
+            <div class="badge badge-outline">Responsive Design</div>
+          </div>
+        </div>
+      </div>
+      <div class="card m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+        <figure>
+          <img
+            src="/assets/proj7.png"
+            alt="ProjectSS"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Youtube Downloader
+          </h2>
+          <p>
+            Downloads audio-only mp4s of single URls or entire plalists.
+            This project is meant for educational purposes only. 
+            It is not to be used to infringe on any copyright laws.
+          </p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Python</div>
+            <div class="badge badge-outline">Pytube</div>
+            <div class="badge badge-outline">Tkinter</div>
           </div>
         </div>
       </div>
