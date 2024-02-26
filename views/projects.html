@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-mc-1">
+<html lang="en" class="bg-mask-polka">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,15 +8,18 @@
     <title>Shrey Bhatt - UwU</title>
 
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/saasmain.css" />
+
   </head>
   <body>
+
     <!-- Navbar -->
     <div
       class="navbar z-10 backdrop-blur-sm bg-opacity-80 shadow-lg fixed top-0 bg-mc-1 text-gray-300"
     >
       <!-- Title Text-->
       <div class="flex-1">
-        <a href="/" class="btn btn-ghost hover:bg-mc-2 text-2xl">Dashboard</a>
+        <a href="/" class="btn btn-ghost hover:bg-mc-2 text-2xl">Shrey Bhatt</a>
       </div>
 
       <!-- Regular Navbar-->
@@ -27,6 +30,22 @@
           <li class="hover:bg-mc-2 rounded">
             <a href="/projects">Projects & Repos</a>
           </li>
+          <li class="hover:bg-mc-2 rounded">
+            <a target="_blank" href="https://github.com/KaosElegent"
+              >Source Code</a
+            >
+          </li>
+          <!--li class="hover:bg-mc-2 rounded">
+              <details>
+                <summary>
+                  Projects
+                </summary>
+                <ul class="p-2 bg-mc-2 rounded-t-none">
+                  <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
+                  <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
+                </ul>
+              </details>
+            </li-->
         </ul>
       </div>
 
@@ -50,37 +69,61 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-mc-2 rounded-box w-52"
+          class="menu menu-sm dropdown-content min-w-max right-0 mt-3 z-[1] p-2 shadow bg-mc-2 backdrop-blur-sm bg-opacity-20 rounded-box w-52"
         >
-          <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
-          <li class="hover:bg-mc-2 rounded">
-            <a href="/projects">Projects</a>
+        <li class="rounded-box mb-2 mt-2 min-w-full">
+          <a class="text-xl flex justify-center p-2" href="/">Home</a>
+        </li>
+          <li class="rounded-box mb-2 mt-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" href="/about">About</a>
           </li>
+          <li class="rounded-box mb-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" href="/projects"
+              >Projects & Repos</a
+            >
+          </li>
+          <li class="rounded-box mb-2 mt-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" target="_blank" href="https://github.com/KaosElegent">Source Code</a>
+          </li>
+          <!--li class="hover:bg-mc-2 rounded">
+                <details>
+                  <summary>
+                    Projects
+                  </summary>
+                  <ul class="p-2 hover:bg-mc-2 rounded">
+                    <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
+                    <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
+                  </ul>
+                </details>
+              </li-->
         </ul>
       </div>
+
+      <div class="scroll-line"></div>
     </div>
 
     <!-- Projects -->
     <div class="mt-24 ml-8 mr-8 flex flex-wrap justify-evenly">
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj1.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj1.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/authentication-system">
-          <h2 class="card-title mb-2">
-            Authentication/Credential Storage System
-            <!--div class="badge badge-secondary">NEW</div-->
-          </h2>
-          <p>
-            Generating cryptographically secure pseudorandom salts, 
-            hashing and storing credentials while preventing SQL 
-            injection attacks.
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/authentication-system"
+          >
+            <h2 class="card-title mb-2">
+              Authentication/Credential Storage System
+              <!--div class="badge badge-secondary">NEW</div-->
+            </h2>
+            <p>
+              Generating cryptographically secure pseudorandom salts, hashing
+              and storing credentials while preventing SQL injection attacks.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">Python</div>
             <div class="badge badge-outline">MySQL</div>
@@ -89,24 +132,24 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj2.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj2.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/eyecare-assistant">
-          <h2 class="card-title mb-2">
-            Eyecare Assistant
-          </h2>
-          <p>
-            An elementary assistant on Linux, which utilizes OpenCV 
-            and system alerts to notify the user that they have been at 
-            their computer for a long period of time.
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/eyecare-assistant"
+          >
+            <h2 class="card-title mb-2">Eyecare Assistant</h2>
+            <p>
+              An elementary assistant on Linux, which utilizes OpenCV and system
+              alerts to notify the user that they have been at their computer
+              for a long period of time.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">C++</div>
             <div class="badge badge-outline">OpenCV</div>
@@ -115,24 +158,22 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj3.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj3.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
           <a target="_blank" href="https://github.com/KaosElegent/VoiceRE">
-          <h2 class="card-title mb-2">
-            VoiceRE (UI Incomplete)
-          </h2>
-          <p>
-            The application stores user-recorded audio onto Cloudinary, 
-            records it via MongoDB, and utilizes Google API and OpenAI, 
-            converting it into prompt-engineered questions for reimagined learning
-          </p>
-        </a>
+            <h2 class="card-title mb-2">VoiceRE (UI Incomplete)</h2>
+            <p>
+              The application stores user-recorded audio onto Cloudinary,
+              records it via MongoDB, and utilizes Google API and OpenAI,
+              converting it into prompt-engineered questions for reimagined
+              learning
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">Next.js</div>
             <div class="badge badge-outline">Flask</div>
@@ -143,23 +184,25 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj4.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj4.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/tensorflow-fun">
-          <h2 class="card-title mb-2">
-            Neural Nets & Other Tensorflow Projects
-          </h2>
-          <p>
-            The google collab files host a plethora of personal as 
-            well as guided projects for understanding ml and nural networks.
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/tensorflow-fun"
+          >
+            <h2 class="card-title mb-2">
+              Neural Nets & Other Tensorflow Projects
+            </h2>
+            <p>
+              The google collab files host a plethora of personal as well as
+              guided projects for understanding ml and nural networks.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">Tensorflow</div>
             <div class="badge badge-outline">Keras</div>
@@ -170,23 +213,26 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj5.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj5.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/Web-Adventures">
-          <h2 class="card-title mb-2">
-            Personal Webpages (Passion Projects)
-          </h2>
-          <p>
-            The repo contains my constantly growing collection of minimalist webpages in different styles. 
-            This includes articles, demo music apps, etc.
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/Web-Adventures"
+          >
+            <h2 class="card-title mb-2">
+              Personal Webpages (Passion Projects)
+            </h2>
+            <p>
+              The repo contains my constantly growing collection of minimalist
+              webpages in different styles. This includes articles, demo music
+              apps, etc.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">HTML</div>
             <div class="badge badge-outline">CSS</div>
@@ -195,49 +241,46 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj6.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj6.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/COBOL-Showcase">
-          <h2 class="card-title mb-2">
-            COBOL Data Querying
-          </h2>
-          <p>
-            COBOL is still widely used in legacy systems for it's reliability 
-            when it comes to financial calculations. This is why I decided to 
-            learn COBOL and provide a small showcase of reading 
-            fixed-length data files and performing arithmetric operations
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/COBOL-Showcase"
+          >
+            <h2 class="card-title mb-2">COBOL Data Querying</h2>
+            <p>
+              COBOL is still widely used in legacy systems for it's reliability
+              when it comes to financial calculations. This is why I decided to
+              learn COBOL and provide a small showcase of reading fixed-length
+              data files and performing arithmetric operations
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">COBOL</div>
             <div class="badge badge-outline">Fixed-Length Data</div>
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj8.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj8.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
           <a target="_blank" href="/">
-          <h2 class="card-title mb-2">
-            Portfolio Website
-          </h2>
-          <p>
-            This website serves as my personal portfolio, showcasing my skills,
-            work experience, leadership experience, projects, etc. 
-            It is always being imrpoved and reworked.
-          </p>
-        </a>
+            <h2 class="card-title mb-2">Portfolio Website</h2>
+            <p>
+              This website serves as my personal portfolio, showcasing my
+              skills, work experience, leadership experience, projects, etc. It
+              is always being imrpoved and reworked.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">HTML</div>
             <div class="badge badge-outline">CSS</div>
@@ -248,24 +291,24 @@
           </div>
         </div>
       </div>
-      <div class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]">
+      <div
+        class="card hover:scale-105 transition-all duration-500 m-6 w-96 bg-[hsla(0,0%,100%,0.55)] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 backdrop-blur-[10px]"
+      >
         <figure>
-          <img
-            src="/assets/proj7.png"
-            alt="ProjectSS"
-          />
+          <img src="/assets/proj7.png" alt="ProjectSS" />
         </figure>
         <div class="card-body">
-          <a target="_blank" href="https://github.com/KaosElegent/Youtube-Downloader">
-          <h2 class="card-title mb-2">
-            Youtube Downloader
-          </h2>
-          <p>
-            Downloads audio-only mp4s of single URls or entire plalists.
-            This project is meant for educational purposes only. 
-            It is not to be used to infringe on any copyright laws.
-          </p>
-        </a>
+          <a
+            target="_blank"
+            href="https://github.com/KaosElegent/Youtube-Downloader"
+          >
+            <h2 class="card-title mb-2">Youtube Downloader</h2>
+            <p>
+              Downloads audio-only mp4s of single URls or entire plalists. This
+              project is meant for educational purposes only. It is not to be
+              used to infringe on any copyright laws.
+            </p>
+          </a>
           <div class="card-actions justify-end">
             <div class="badge badge-outline">Python</div>
             <div class="badge badge-outline">Pytube</div>

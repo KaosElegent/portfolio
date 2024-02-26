@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-mc-1">
+<html lang="en" class="bg-mask-polka">
   <head>
 
     <meta charset="UTF-8" />
@@ -9,16 +9,18 @@
     <title>Shrey Bhatt - UwU</title>
     
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/saasmain.css" />
 
   </head>
   <body>
 
     <!-- Navbar -->
-    <div class="navbar z-10 backdrop-blur-sm bg-opacity-80 shadow-lg fixed top-0 bg-mc-1 text-gray-300">
-      
+    <div
+      class="navbar z-10 backdrop-blur-sm bg-opacity-80 shadow-lg fixed top-0 bg-mc-1 text-gray-300"
+    >
       <!-- Title Text-->
       <div class="flex-1">
-        <a href="/" class="btn btn-ghost hover:bg-mc-2 text-2xl">Dashboard</a>
+        <a href="/" class="btn btn-ghost hover:bg-mc-2 text-2xl">Shrey Bhatt</a>
       </div>
 
       <!-- Regular Navbar-->
@@ -26,42 +28,79 @@
         <ul class="menu menu-horizontal text-xl">
           <li class="hover:bg-mc-2 rounded"><a href="/">Home</a></li>
           <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
-          <li class="hover:bg-mc-2 rounded"><a href="/projects">Projects & Repos</a></li>
+          <li class="hover:bg-mc-2 rounded">
+            <a href="/projects">Projects & Repos</a>
+          </li>
+          <li class="hover:bg-mc-2 rounded">
+            <a target="_blank" href="https://github.com/KaosElegent"
+              >Source Code</a
+            >
+          </li>
           <!--li class="hover:bg-mc-2 rounded">
-            <details>
-              <summary>
-                Projects
-              </summary>
-              <ul class="p-2 bg-mc-2 rounded-t-none">
-                <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
-                <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
-              </ul>
-            </details>
-          </li-->
-        </ul>
-      </div>
-
-      <!-- Dropdown Navbar-->
-      <div class="dropdown pt-3">
-          <label tabindex="0" class="btn btn-ghost sm:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-mc-2 rounded-box w-52">
-            <li class="hover:bg-mc-2 rounded"><a href="/about">About</a></li>
-            <li class="hover:bg-mc-2 rounded"><a href="/projects">Projects</a></li>
-            <!--li class="hover:bg-mc-2 rounded">
               <details>
                 <summary>
                   Projects
                 </summary>
-                <ul class="p-2 hover:bg-mc-2 rounded">
+                <ul class="p-2 bg-mc-2 rounded-t-none">
                   <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
                   <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
                 </ul>
               </details>
             </li-->
-          </ul>
+        </ul>
       </div>
+
+      <!-- Dropdown Navbar-->
+      <div class="dropdown pt-3">
+        <label tabindex="0" class="btn btn-ghost sm:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </label>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content min-w-max right-0 mt-3 z-[1] p-2 shadow bg-mc-2 backdrop-blur-sm bg-opacity-20 rounded-box w-52"
+        >
+        <li class="rounded-box mb-2 mt-2 min-w-full">
+          <a class="text-xl flex justify-center p-2" href="/">Home</a>
+        </li>
+          <li class="rounded-box mb-2 mt-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" href="/about">About</a>
+          </li>
+          <li class="rounded-box mb-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" href="/projects"
+              >Projects & Repos</a
+            >
+          </li>
+          <li class="rounded-box mb-2 mt-2 min-w-full">
+            <a class="text-xl flex justify-center p-2" target="_blank" href="https://github.com/KaosElegent">Source Code</a>
+          </li>
+          <!--li class="hover:bg-mc-2 rounded">
+                <details>
+                  <summary>
+                    Projects
+                  </summary>
+                  <ul class="p-2 hover:bg-mc-2 rounded">
+                    <li class="hover:bg-mc-3 rounded"><a>Project 1</a></li>
+                    <li class="hover:bg-mc-3 rounded"><a>Project 2</a></li>
+                  </ul>
+                </details>
+              </li-->
+        </ul>
+      </div>
+
+      <div class="scroll-line"></div>
     </div>
 
     <div class="mt-16 px-6 py-12 text-center md:px-12 lg:text-left">
