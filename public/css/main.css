@@ -2758,18 +2758,6 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dark-bg{
-  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
-}
-
-.bg-mask-polka{
-  background-color: #282535;
-  opacity: 0.8;
-  background-image:  radial-gradient(#4F4557 1.3px, transparent 1.3px), radial-gradient(#4F4557 1.3px, #282535 1.3px);
-  background-size: 52px 52px;
-  background-position: 0 0,26px 26px;
-}
-
 @media not all and (min-width: 768px) {
   .max-md\:timeline-compact,.max-md\:timeline-compact
 .timeline-horizontal {
