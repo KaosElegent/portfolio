@@ -1,5 +1,5 @@
 
-# Personal Portfolio
+# Personal Portfolio (Outdated Readme)
 
 Hey there! This repo contains the source code for my **Portfolio**. This project is meant to showcase my ability to use HTML, CSS, JS, etc. It is responsive and I've decided that I'll be taking a mobile-first approach to the development.
 
