@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Navbar (https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome @ KawaLo) -->
     <div
-      class="navbar z-10 backdrop-blur-sm bg-opacity-80 shadow-lg fixed top-0 bg-mc-1 text-gray-300"
+      class="navbar z-10 bg-opacity-80 shadow-lg fixed top-0 bg-mc-1 text-gray-300"
     >
       <!-- Title Text-->
       <div class="flex-1">
@@ -27,17 +27,12 @@
           <li class="hover:bg-mc-2 rounded">
             <a href="/projects">Projects & Repos</a>
           </li>
-          <!--li class="hover:bg-mc-2 rounded">
-            <a target="_blank" href="https://github.com/KaosElegent"
-              >Source Code</a
-            >
-          </li-->
         </ul>
       </div>
 
       <!-- Dropdown Navbar-->
-      <div class="dropdown pt-3 backdrop-blur-sm bg-opacity-80">
-        <label tabindex="0" class="btn btn-ghost md:hidden">
+      <div class="dropdown pt-3 ">
+        <label tabindex="0" class="btn btn-ghost md:hidden ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-6 h-6"
@@ -55,9 +50,9 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content min-w-max right-0 mt-3 z-[1] p-2 shadow bg-mc-2 backdrop-blur-sm bg-opacity-20 rounded-box w-52"
+          class="menu menu-sm dropdown-content min-w-max right-0 mt-3 p-2 shadow rounded-box w-48 bg-mc-1 backdrop-blur-sm bg-opacity-80"
         >
-          <li class="rounded-box mb-2 mt-2 min-w-full">
+          <li class="rounded-box mb-2 mt-2 min-w-full ">
             <a class="text-xl flex justify-center p-2" href="/">Home</a>
           </li>
           <li class="rounded-box mb-2 mt-2 min-w-full">
@@ -68,14 +63,6 @@
               >Projects & Repos</a
             >
           </li>
-          <!--li class="rounded-box mb-2 mt-2 min-w-full">
-            <a
-              class="text-xl flex justify-center p-2"
-              target="_blank"
-              href="https://github.com/KaosElegent"
-              >Source Code</a
-            >
-          </li-->
         </ul>
       </div>
 
@@ -100,7 +87,7 @@
             href="https://github.com/KaosElegent/authentication-system"
           >
             <h2 class="card-title mb-2">
-              Authentication/Credential Storage System
+              Authentication / Credential Storage System
             </h2>
             <p>
               Generating cryptographically secure pseudorandom salts, hashing
