@@ -3303,12 +3303,6 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (max-width: 460px) {
-  .max-\[460px\]\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 460px) {
   .min-\[460px\]\:block {
     display: block;
