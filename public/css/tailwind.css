@@ -60,3 +60,7 @@
     backdrop-filter: blur(4px);
     z-index: -1;
 }
+
+.text-primary{
+    color: #6b00e0;
+}
